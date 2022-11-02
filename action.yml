@@ -1,0 +1,9 @@
+# action.yml
+name: 'GitHub Action Template'
+description: 'A template repository for building GitHub actions in PHP with Minicli'
+outputs:
+  response:
+    description: 'Output from command'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

@@ -1,0 +1,14 @@
+name: Example Workflow
+on:
+  schedule:
+    - cron: "0 0 1 * *" #runs once a month
+  workflow_dispatch:
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: org/action-repo@tag
+        name: Workflow step1 title
+        env:
+          MY_ENV_1: 'value'
+          MY_ENV_2: 'something'
